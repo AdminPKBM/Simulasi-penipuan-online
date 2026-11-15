@@ -1,0 +1,423 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Simulasi Kenali Penipuan Online untuk Pelajar | Latihan Interaktif</title>
+<meta name="description" content="Latihan interaktif mengenali penipuan online: pesan hadiah palsu, telepon mengaku bank, tawaran kerja, jual beli, akun tiruan, dan kode QR. Gratis, tanpa login.">
+<meta name="keywords" content="simulasi penipuan online, mengenali penipuan online, edukasi anti penipuan pelajar, latihan keamanan digital, scam awareness">
+<meta name="robots" content="index, follow, max-image-preview:large">
+<meta name="author" content="Nama Penyusun">
+<link rel="canonical" href="https://NAMA-DOMAIN-ANDA/simulasi-penipuan-online/">
+<meta name="theme-color" content="#2563eb">
+
+<meta property="og:type" content="website">
+<meta property="og:locale" content="id_ID">
+<meta property="og:site_name" content="Nama Situs Anda">
+<meta property="og:title" content="Simulasi Kenali Penipuan Online untuk Pelajar">
+<meta property="og:description" content="Latihan interaktif enam situasi penipuan online yang sering dialami pelajar, lengkap dengan penjelasan.">
+<meta property="og:url" content="https://NAMA-DOMAIN-ANDA/simulasi-penipuan-online/">
+
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Simulasi Kenali Penipuan Online untuk Pelajar">
+<meta name="twitter:description" content="Latihan interaktif mengenali penipuan online bagi pelajar.">
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "LearningResource",
+  "name": "Simulasi Kenali Penipuan Online untuk Pelajar",
+  "description": "Latihan interaktif enam situasi penipuan online yang sering dialami pelajar, dengan penjelasan setiap pilihan jawaban.",
+  "learningResourceType": "Simulation",
+  "educationalLevel": "Pelajar SD, SMP, SMA, SMK",
+  "inLanguage": "id",
+  "isAccessibleForFree": true,
+  "url": "https://NAMA-DOMAIN-ANDA/simulasi-penipuan-online/"
+}
+</script>
+
+<style>
+  :root {
+    --bg: #f5f7fb;
+    --surface: #ffffff;
+    --surface-2: #eef2fa;
+    --text: #111827;
+    --muted: #4b5563;
+    --primary: #2563eb;
+    --primary-ink: #ffffff;
+    --good: #15803d;
+    --good-bg: #dcfce7;
+    --bad: #b91c1c;
+    --bad-bg: #fee2e2;
+    --border: #d9e0ec;
+    --shadow: 0 1px 2px rgba(16, 24, 40, .06), 0 8px 24px rgba(16, 24, 40, .06);
+    --radius: 16px;
+    color-scheme: light;
+  }
+  @media (prefers-color-scheme: dark) {
+    :root:not([data-theme="light"]) {
+      --bg: #0b1020;
+      --surface: #131a2e;
+      --surface-2: #1a2340;
+      --text: #e5e9f5;
+      --muted: #a3afc7;
+      --primary: #5b8cff;
+      --primary-ink: #0b1020;
+      --good: #4ade80;
+      --good-bg: #123323;
+      --bad: #f87171;
+      --bad-bg: #3a1a1f;
+      --border: #26304d;
+      --shadow: none;
+      color-scheme: dark;
+    }
+  }
+  :root[data-theme="dark"] {
+    --bg: #0b1020; --surface: #131a2e; --surface-2: #1a2340; --text: #e5e9f5; --muted: #a3afc7;
+    --primary: #5b8cff; --primary-ink: #0b1020; --good: #4ade80; --good-bg: #123323;
+    --bad: #f87171; --bad-bg: #3a1a1f; --border: #26304d; --shadow: none; color-scheme: dark;
+  }
+
+  * { box-sizing: border-box; }
+  html { -webkit-text-size-adjust: 100%; scroll-padding-top: env(safe-area-inset-top, 0px); }
+  body {
+    margin: 0;
+    background: var(--bg);
+    color: var(--text);
+    font-family: system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+    font-size: 16px;
+    line-height: 1.65;
+    padding-top: env(safe-area-inset-top, 0px);
+    padding-bottom: env(safe-area-inset-bottom, 0px);
+  }
+  .container { width: min(100% - 32px, 760px); margin: 0 auto; }
+  img, svg { max-width: 100%; height: auto; }
+
+  /* Header */
+  .hero { padding: 40px 0 24px; }
+  .eyebrow {
+    display: inline-block; font-size: .8rem; font-weight: 600; letter-spacing: .04em;
+    color: var(--primary); background: var(--surface-2); border-radius: 999px; padding: 4px 12px; margin-bottom: 12px;
+  }
+  h1 { font-size: clamp(1.6rem, 4vw, 2.25rem); line-height: 1.2; margin: 0 0 12px; letter-spacing: -.01em; }
+  .lead { color: var(--muted); font-size: 1.05rem; margin: 0; max-width: 60ch; }
+
+  /* Sections */
+  section.block { padding: 8px 0 20px; }
+  h2 { font-size: 1.25rem; margin: 0 0 10px; }
+  h3 { font-size: 1.05rem; margin: 18px 0 6px; }
+  .card {
+    background: var(--surface); border: 1px solid var(--border); border-radius: var(--radius);
+    box-shadow: var(--shadow); padding: clamp(16px, 3vw, 24px); margin-bottom: 16px;
+  }
+  .materi ul { padding-left: 20px; margin: 8px 0 0; }
+  .materi li { margin-bottom: 6px; }
+
+  /* Game */
+  .game-head { display: flex; justify-content: space-between; align-items: center; gap: 12px; flex-wrap: wrap; margin-bottom: 12px; }
+  .pill {
+    font-size: .8rem; font-weight: 600; color: var(--primary); background: var(--surface-2);
+    border-radius: 999px; padding: 4px 12px;
+  }
+  .progress { height: 8px; background: var(--surface-2); border-radius: 999px; overflow: hidden; margin-bottom: 16px; }
+  .progress > span { display: block; height: 100%; width: 0; background: var(--primary); transition: width .35s ease; }
+  .chat {
+    background: var(--surface-2); border-radius: 14px; padding: 16px; margin-bottom: 14px;
+    border: 1px solid var(--border);
+  }
+  .chat-label { font-size: .8rem; color: var(--muted); margin-bottom: 6px; font-weight: 600; }
+  .chat-body { white-space: pre-line; margin: 0; font-size: .98rem; }
+  .question { font-weight: 600; margin: 14px 0 10px; }
+  .options { display: grid; gap: 10px; }
+  .option {
+    font: inherit; color: var(--text); background: var(--surface); border: 1.5px solid var(--border);
+    border-radius: 12px; padding: 14px 16px; text-align: left; cursor: pointer; min-height: 48px;
+    transition: border-color .2s, background .2s, transform .1s;
+  }
+  .option:hover:not(:disabled) { border-color: var(--primary); }
+  .option:active:not(:disabled) { transform: scale(.99); }
+  .option:focus-visible, .btn:focus-visible { outline: 3px solid color-mix(in srgb, var(--primary) 50%, transparent); outline-offset: 2px; }
+  .option:disabled { cursor: default; }
+  .option.correct { border-color: var(--good); background: var(--good-bg); }
+  .option.wrong { border-color: var(--bad); background: var(--bad-bg); }
+
+  .feedback {
+    margin-top: 14px; padding: 14px 16px; border-radius: 12px; background: var(--surface-2);
+    border-left: 4px solid var(--primary); font-size: .95rem;
+  }
+  .feedback.ok { border-left-color: var(--good); }
+  .feedback.no { border-left-color: var(--bad); }
+  .feedback strong { display: block; margin-bottom: 2px; }
+
+  .actions { display: flex; justify-content: flex-end; margin-top: 16px; }
+  .btn {
+    font: inherit; font-weight: 600; cursor: pointer; border: 0; border-radius: 12px;
+    background: var(--primary); color: var(--primary-ink); padding: 12px 20px; min-height: 44px;
+  }
+  .btn:hover { filter: brightness(1.06); }
+  .btn.ghost { background: transparent; color: var(--primary); border: 1.5px solid var(--primary); }
+
+  .hidden { display: none !important; }
+
+  /* Summary */
+  .score-wrap { display: flex; align-items: center; gap: 18px; flex-wrap: wrap; margin-bottom: 12px; }
+  .score {
+    font-size: 2.2rem; font-weight: 800; color: var(--primary); line-height: 1;
+    min-width: 100px; text-align: center; background: var(--surface-2); border-radius: 16px; padding: 16px;
+  }
+  ul.tips { padding-left: 20px; margin: 8px 0 0; }
+  ul.tips li { margin-bottom: 8px; }
+
+  footer { color: var(--muted); font-size: .85rem; padding: 8px 0 40px; }
+
+  @media (prefers-reduced-motion: reduce) {
+    * { transition: none !important; animation: none !important; }
+  }
+  @media (max-width: 480px) {
+    .hero { padding-top: 24px; }
+    .btn { width: 100%; }
+    .actions { justify-content: stretch; }
+  }
+</style>
+</head>
+<body>
+
+<header class="hero">
+  <div class="container">
+    <span class="eyebrow">Edukasi Keamanan Digital</span>
+    <h1>Simulasi Kenali Penipuan Online</h1>
+    <p class="lead">Latihan singkat untuk pelajar. Pilih respons yang menurutmu paling tepat di setiap situasi, lalu baca penjelasannya.</p>
+  </div>
+</header>
+
+<main class="container">
+
+  <!-- Konten statis: dapat dibaca mesin pencari dan pengguna tanpa JavaScript -->
+  <section class="block materi card" aria-labelledby="materi-title">
+    <h2 id="materi-title">Mengapa Pelajar Perlu Mengenali Penipuan Online?</h2>
+    <p>Penipuan online sering memanfaatkan rasa penasaran, takut kehilangan kesempatan, dan keinginan mendapat sesuatu dengan cepat. Mengenali pola umum penipuan membantu siswa melindungi data pribadi, akun, dan uang mereka.</p>
+
+    <h3>Enam situasi yang dilatih dalam simulasi ini</h3>
+    <ul>
+      <li>Pesan hadiah palsu yang meminta data rekening.</li>
+      <li>Telepon yang mengaku dari bank dan meminta kode OTP.</li>
+      <li>Tawaran kerja dengan gaji besar dan syarat mengirim KTP.</li>
+      <li>Penjual yang meminta transfer ke rekening pribadi di luar aplikasi resmi.</li>
+      <li>Akun tiruan yang menyamar sebagai teman dan meminta pulsa atau uang.</li>
+      <li>Kode QR di tempat umum yang meminta kata sandi.</li>
+    </ul>
+
+    <h3>Kebiasaan yang perlu diingat</h3>
+    <ul class="tips">
+      <li>Berhenti sejenak sebelum merespons pesan yang mendesak.</li>
+      <li>Hubungi lembaga atau layanan resmi lewat nomor yang kamu temukan sendiri.</li>
+      <li>Jangan pernah membagikan kode OTP, kata sandi, atau data kartu.</li>
+      <li>Periksa alamat tautan dengan teliti sebelum membukanya.</li>
+      <li>Jika ragu atau sudah menjadi korban, bicarakan dengan guru, orang tua, atau pihak berwenang.</li>
+    </ul>
+  </section>
+
+  <!-- Area simulasi interaktif -->
+  <section class="block" aria-labelledby="sim-title">
+    <h2 id="sim-title" class="visually-hidden" style="position:absolute;width:1px;height:1px;overflow:hidden;clip:rect(0 0 0 0);">Simulasi interaktif</h2>
+
+    <div id="game" class="card" aria-live="polite">
+      <div class="game-head">
+        <span class="pill" id="stageTag"></span>
+        <span class="pill" id="counter"></span>
+      </div>
+      <div class="progress" aria-hidden="true"><span id="bar"></span></div>
+
+      <div class="chat">
+        <div class="chat-label">Pesan yang kamu terima</div>
+        <p class="chat-body" id="message"></p>
+      </div>
+
+      <p class="question" id="question"></p>
+      <div class="options" id="options" role="group" aria-labelledby="question"></div>
+
+      <div class="feedback hidden" id="feedback" role="status"></div>
+
+      <div class="actions">
+        <button class="btn hidden" id="nextBtn" type="button">Lanjut</button>
+      </div>
+    </div>
+
+    <div id="summary" class="card hidden" aria-live="polite">
+      <h2>Hasil Simulasi</h2>
+      <div class="score-wrap">
+        <div class="score" id="scoreText"></div>
+        <div>
+          <p style="margin:0">Kamu menjawab tepat <strong id="correctCount"></strong> dari <strong id="totalCount"></strong> situasi.</p>
+          <p style="margin:6px 0 0; color: var(--muted)" id="resultMsg"></p>
+        </div>
+      </div>
+      <div class="actions">
+        <button class="btn ghost" id="restartBtn" type="button">Ulangi Simulasi</button>
+      </div>
+    </div>
+  </section>
+
+  <!-- Pesan untuk pengguna yang tidak bisa menjalankan JavaScript -->
+  <noscript>
+    <div class="card">
+      <p>Simulasi interaktif membutuhkan JavaScript. Materi di atas tetap dapat dibaca tanpa JavaScript.</p>
+    </div>
+  </noscript>
+
+</main>
+
+<footer class="container">
+  <p>Simulasi ini bersifat ilustrasi untuk edukasi. Nama, bank, orang, dan tautan dalam cerita bersifat fiktif. Tidak ada data pengguna yang dikumpulkan atau disimpan.</p>
+</footer>
+
+<script>
+  const scenarios = [
+    {
+      stage: "Situasi 1 · Pesan singkat",
+      message: "Pesan dari nomor tidak dikenal:\n\"Selamat! Kamu terpilih mendapat hadiah uang tunai Rp5.000.000. Klik tautan ini dan isi data rekeningmu sebelum besok: bit.ly/hadiah-xxx\"",
+      question: "Apa yang sebaiknya kamu lakukan?",
+      options: [
+        { text: "Klik tautannya karena hadiahnya besar", correct: false, why: "Hadiah yang meminta data rekening dan diberi batas waktu mendesak adalah ciri umum penipuan. Tautan singkat juga menyembunyikan tujuan sebenarnya." },
+        { text: "Abaikan, hapus pesannya, dan jangan mengisi data apa pun", correct: true, why: "Tepat. Hadiah yang mengharuskan kamu membagikan data rekening dan terburu-buru adalah tanda bahaya." },
+        { text: "Balas pesannya dan tanya apakah hadiah ini benar", correct: false, why: "Membalas bisa membuat nomormu dianggap aktif dan menjadi sasaran pesan berikutnya." }
+      ]
+    },
+    {
+      stage: "Situasi 2 · Telepon mengaku dari bank",
+      message: "Telepon masuk:\n\"Halo, kami dari bagian keamanan bank. Akun kamu diblokir karena aktivitas mencurigakan. Sebutkan kode OTP yang baru saja kami kirim agar akun bisa dipulihkan.\"",
+      question: "Bagaimana responsmu?",
+      options: [
+        { text: "Sebutkan kode OTP agar akun tidak jadi diblokir", correct: false, why: "Kode OTP bersifat rahasia. Petugas resmi tidak akan memintanya lewat telepon." },
+        { text: "Tutup telepon, lalu hubungi bank lewat nomor resmi di kartu atau aplikasi", correct: true, why: "Tepat. Verifikasi lewat kanal resmi yang kamu temukan sendiri adalah cara paling aman." },
+        { text: "Minta nama dan nomor petugas, lalu tetap lanjutkan percakapan", correct: false, why: "Nama dan nomor yang diberikan bisa palsu. Lebih aman mengakhiri panggilan dan menghubungi bank lewat kanal resmi." }
+      ]
+    },
+    {
+      stage: "Situasi 3 · Tawaran kerja",
+      message: "Pesan media sosial:\n\"Mau kerja part-time dari rumah? Gaji Rp500.000 per hari, cukup like dan follow akun kami. Daftar sekarang dengan mengirim KTP dan selfie.\"",
+      question: "Apa keputusan yang paling bijak?",
+      options: [
+        { text: "Daftar sekarang karena gajinya menarik", correct: false, why: "Gaji tinggi untuk pekerjaan yang sangat ringan adalah pola umum penipuan. Mengirim KTP dan selfie juga berisiko disalahgunakan." },
+        { text: "Minta penjelasan pekerjaan secara lengkap dan cek perusahaannya lewat sumber resmi sebelum memberi data pribadi", correct: true, why: "Tepat. Tawaran kerja yang sah tidak meminta data sensitif lewat pesan singkat tanpa penjelasan." },
+        { text: "Kirim KTP saja, selfie tidak perlu", correct: false, why: "KTP tetap data pribadi yang sensitif. Membagikannya ke pihak yang belum jelas identitasnya berisiko." }
+      ]
+    },
+    {
+      stage: "Situasi 4 · Jual beli online",
+      message: "Penjual di media sosial:\n\"Barangnya ready, harga murah banget! Transfer dulu ke rekening pribadi saya, nanti barang dikirim. Di aplikasi resmi lagi error, jadi lewat chat saja ya.\"",
+      question: "Apa yang sebaiknya kamu lakukan?",
+      options: [
+        { text: "Transfer sekarang, harga murah jarang datang dua kali", correct: false, why: "Mengarahkan pembayaran ke rekening pribadi dan menghindari aplikasi resmi adalah tanda bahaya utama." },
+        { text: "Lakukan transaksi hanya lewat aplikasi atau platform resmi", correct: true, why: "Tepat. Transaksi di platform resmi memberi perlindungan dan riwayat yang bisa dilacak." },
+        { text: "Transfer sebagian dulu sebagai uang muka", correct: false, why: "Uang muka ke pihak yang belum terpercaya tetap berisiko hilang." }
+      ]
+    },
+    {
+      stage: "Situasi 5 · Pesan dari akun teman",
+      message: "Pesan dari akun yang mirip teman sekelasmu:\n\"Eh, ini aku pakai nomor baru, akun lama kena blokir. Tolong pinjami pulsa dulu dong, nanti aku ganti. Mau kirim lewat e-wallet.\"",
+      question: "Bagaimana sebaiknya kamu menanggapi?",
+      options: [
+        { text: "Kirim saja, dia pasti temanku", correct: false, why: "Akun yang meniru identitas orang lain adalah modus umum. Jangan langsung percaya hanya karena nama atau foto mirip." },
+        { text: "Telepon teman itu langsung lewat nomor yang kamu kenal, lalu tanyakan kebenarannya", correct: true, why: "Tepat. Verifikasi lewat jalur lain membantu memastikan siapa yang sebenarnya menghubungimu." },
+        { text: "Tanya dulu berapa pulsa yang dibutuhkan, lalu kirim sedikit", correct: false, why: "Bertanya lalu mengirim sedikit tetap berisiko. Verifikasi dulu sebelum mengirim apa pun." }
+      ]
+    },
+    {
+      stage: "Situasi 6 · Kode QR di tempat umum",
+      message: "Di sebuah poster tertera:\n\"Scan QR untuk ambil voucher belanja gratis. Isi data login akunmu di halaman yang muncul.\"",
+      question: "Apa yang kamu lakukan?",
+      options: [
+        { text: "Scan dan isi data login, karena voucher gratis itu menarik", correct: false, why: "Meminta kata sandi lewat QR di tempat umum adalah tanda bahaya. Kata sandi tidak perlu dimasukkan ke promosi semacam ini." },
+        { text: "Jangan scan, dan laporkan jika poster itu mengatasnamakan merek tertentu", correct: true, why: "Tepat. Jangan memasukkan kata sandi setelah memindai kode yang tidak jelas asalnya." },
+        { text: "Scan, tapi lewati bagian login", correct: false, why: "Halaman yang tidak jelas tetap bisa mengumpulkan data atau memasang aplikasi berbahaya. Lebih aman tidak membukanya sama sekali." }
+      ]
+    }
+  ];
+
+  const state = { index: 0, correct: 0, answered: false };
+  const $ = (id) => document.getElementById(id);
+  const el = {
+    game: $("game"), summary: $("summary"), stageTag: $("stageTag"), counter: $("counter"),
+    message: $("message"), question: $("question"), options: $("options"), feedback: $("feedback"),
+    nextBtn: $("nextBtn"), bar: $("bar"), correctCount: $("correctCount"), totalCount: $("totalCount"),
+    scoreText: $("scoreText"), resultMsg: $("resultMsg"), restartBtn: $("restartBtn")
+  };
+
+  function renderScenario() {
+    const s = scenarios[state.index];
+    state.answered = false;
+    el.stageTag.textContent = s.stage;
+    el.counter.textContent = (state.index + 1) + " / " + scenarios.length;
+    el.message.textContent = s.message;
+    el.question.textContent = s.question;
+    el.feedback.className = "feedback hidden";
+    el.feedback.innerHTML = "";
+    el.nextBtn.classList.add("hidden");
+    el.nextBtn.textContent = state.index === scenarios.length - 1 ? "Lihat hasil" : "Lanjut";
+    el.bar.style.width = (state.index / scenarios.length) * 100 + "%";
+
+    el.options.innerHTML = "";
+    s.options.forEach((opt, i) => {
+      const btn = document.createElement("button");
+      btn.type = "button";
+      btn.className = "option";
+      btn.textContent = opt.text;
+      btn.addEventListener("click", () => choose(i));
+      el.options.appendChild(btn);
+    });
+  }
+
+  function choose(i) {
+    if (state.answered) return;
+    state.answered = true;
+    const s = scenarios[state.index];
+    const opt = s.options[i];
+    if (opt.correct) state.correct++;
+
+    el.options.querySelectorAll("button").forEach((b, idx) => {
+      b.disabled = true;
+      if (s.options[idx].correct) b.classList.add("correct");
+      else if (idx === i) b.classList.add("wrong");
+    });
+
+    el.feedback.className = "feedback " + (opt.correct ? "ok" : "no");
+    el.feedback.innerHTML = "<strong>" + (opt.correct ? "Tepat!" : "Kurang tepat") + "</strong>" + opt.why;
+    el.nextBtn.classList.remove("hidden");
+    el.nextBtn.focus();
+  }
+
+  function next() {
+    state.index++;
+    if (state.index < scenarios.length) renderScenario();
+    else showSummary();
+  }
+
+  function showSummary() {
+    el.game.classList.add("hidden");
+    el.summary.classList.remove("hidden");
+    const total = scenarios.length;
+    el.correctCount.textContent = state.correct;
+    el.totalCount.textContent = total;
+    el.scoreText.textContent = Math.round((state.correct / total) * 100) + "%";
+    el.resultMsg.textContent =
+      state.correct === total ? "Hebat! Kamu sudah cukup siap mengenali modus yang umum." :
+      state.correct >= total / 2 ? "Sudah baik. Ulangi simulasi dan perhatikan lagi penjelasan di setiap situasi." :
+      "Tidak apa-apa. Ulangi simulasi dan diskusikan setiap situasi bersama teman atau guru.";
+    el.restartBtn.focus();
+  }
+
+  function restart() {
+    state.index = 0;
+    state.correct = 0;
+    el.summary.classList.add("hidden");
+    el.game.classList.remove("hidden");
+    renderScenario();
+  }
+
+  el.nextBtn.addEventListener("click", next);
+  el.restartBtn.addEventListener("click", restart);
+  renderScenario();
+</script>
+</body>
+</html>
